@@ -1,4 +1,5 @@
 // Corey Record
+
 // This program will be a bench press calculator, that will help you
 // to improve your 1 rep max on bench press
 
@@ -20,9 +21,17 @@
 // long is a 64 bit signed integer primitive data type
 // float is a 32 bit float primitive data type that allows decimal
 // double is a 64 bit float primitive data type that needs to be store
+
+// Inheritance is reusing code and not having to make more classes
+// This means that we dont have to waste time making repeptive classes
+
+// Polymorphism is an object taking on many forms
+
+
 package BenchPress;
 
 import java.util.Scanner;
+import java.util.Random;
 
 public class benchMain {
 
@@ -30,7 +39,6 @@ public class benchMain {
 	
 					
 				System.out.println("Welcome to the Bench Press Calculator!");
-			
 				System.out.println("Is it true that you want to improve your bench press?");
 				Scanner sc = new Scanner(System.in);
 				boolean bn = sc.nextBoolean();
@@ -43,6 +51,7 @@ public class benchMain {
 				int benchPressMax; // variable declaration
 				benchPressMax = 225;
 				final double bodyWeight = 198.64;
+				System.out.prinntln(Math.floor(bodyweight)))
 				int bwInt = (int) bodyWeight; // Manual Casting
 				String s1 = new String("userHeight");
 				
@@ -61,6 +70,13 @@ public class benchMain {
 					case 4:
 						System.out.println("Elite");
 						break;
+				String skill = benchMax > 3 ? "The lifter is skilled";
+				int squatMax = 2;
+				
+				int deadliftMax = 3;
+				
+				//method call
+				total(1, 2, 3)// arguments squat bench and deadlift max
 				}
 				//escape sequence
 				System.out.print("Your \"bodyWeight\" is good")
@@ -85,9 +101,47 @@ public class benchMain {
 						result = max2;
 					
 					return result;
-				}
+					System.out.println("Max is greater than Previous");
 				
 				}
+				//header and parameters
+				public static void total(int benchMax, int squatMax, int deadliftMax)
+					System.out.println(benchMax + squatMax + deadliftMax);
+				
+			}
+				public static void random(String[] args) {
+				Random barbell = new Random();
+				int plates;
+				
+				for(int counter=1; counter<=10; coutner++) {
+					plates = 1+barbell.nextInt(6);
+					System.out.println(plates + " ");
+				}
+				public static void strings(String[] args) {
+				String a = "Barbell Squat";
+				String b = "Barbell Squat";
+				
+				//== works as it checks to see if they are identical or not 
+				if(a == b) {
+					System.out.println("true");
+				}else {
+					System.out.println("False");
+				
+				}
+				class benchArray
+				{
+				   public static void main(String args[])
+				   {
+				      String[] x={"135","185","225"};
+
+				      args=x;
+				      for(String i: x)
+				      {
+				      System.out.println(i);				
+				
+		}
+				
+				
 }
 
 
